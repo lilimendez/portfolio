@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Horizontal Scrolling</title>
+		<script type='text/javascript' src='code.js'></script>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<style>
+	  * {
+  margin:0;
+  padding:0;
+}
+
+html,
+body {
+  height:100%;
+  min-height:100%;
+}
+
+#page-content {
+  width:200%; /* 500% = 100% x length of panel */
+  height:100%;
+  overflow:hidden;
+}
+
+.panel {
+  width:20%; /* 100% / length of panel */
+  float:left;
+  height:100%;
+}
+
+.panel .inside-panel {padding:2em}
+
+
+/* Details (Ignore this!) */
+body {
+  font:italic normal 13px/1.4 Georgia,Serif;
+  color:#666;
+}
+
+h2 {
+  font-weight:bold;
+  font-size:200%;
+  margin:0 0 1em;
+}
+
+#panel-1 {
+  background-color:black;
+  color:white;
+}
+
+#panel-2 {
+  background-color:magenta;
+  color:yellow;
+}
+
+#panel-3 {
+  background-color:darkblue;
+  color:lightgreen;
+}
+
+#panel-4 {
+  background-color:pink;
+  color:brown;
+}
+
+#panel-5 {
+  background-color:darkred;
+  color:cyan;
+}
+	</style>
+	
+	<body>
+		<div id="page-content">
+			
+		    <div class="panel" id="panel-1">
+		        <div class="inside-panel">
+		        	<h2>Panel 1</h2>
+		        </div>
+		    </div>
+		    
+		    <div class="panel" id="panel-2">
+		        <div class="inside-panel">
+		        	<h2>Panel 2</h2>
+		        </div>
+		    </div>
+		    
+		    <div class="panel" id="panel-3">
+		        <div class="inside-panel">
+		        	<h2>Panel 3</h2>
+		        </div>
+		    </div>
+		    <div class="panel" id="panel-4">
+		        <div class="inside-panel">
+		        	<h2>Panel 4</h2>
+		        </div>
+		    </div>
+		    <div class="panel" id="panel-5">
+		        <div class="inside-panel">
+		        	<h2>Panel 5</h2>
+		        </div>
+		    </div>
+		</div>
+	</body>
+</html>
