@@ -36,7 +36,7 @@ p {
 
 
 .nav {
-writing-mode: sideways-lr;
+transform: rotate(-90deg);
 line-height: 1.8;
   position: absolute;
   bottom: 300px;
@@ -62,7 +62,7 @@ a:link {
 
     </style>
     <body>
-    <container>
+    
     <div class="columnleft"
     <h1>Liliana Mendez</h1>
     <p>graphic design +illustration </p>
@@ -75,12 +75,12 @@ a:link {
  <a href="work.html">
  <div class="work">work</div></a>
  
- <a href="about.html">
+ <a href="#about">
  <div class="about">about</div></a>
  
- <a href="contact.html">
+ <a href="#contact">
  <div class="contact">contact</div></a>
  </div>
-    </container>
+    
     </body>
 </html>
